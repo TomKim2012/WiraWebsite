@@ -11,48 +11,14 @@ jQuery(document).ready(function($) {
         $('#promo .summary').css('opacity', 0).one('inview', function(isInView) {
             if (isInView) {$(this).addClass('animated fadeInUp delayp2');}
         });
-        $('#promo .ios').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated fadeInLeft delayp3');}
-        });
-        
-        $('#promo .android').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated fadeInRight delayp3');}
-        });
-        
-        $('#promo .ipad').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated fadeInRight delayp3');}
-        });
-        
-        $('.phone-holder').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInRightBig delayp4');}
+               
+        $('#promo .slides span').css('opacity', 0).one('inview', function(event, isInView) {
+            if (isInView) {$(this).addClass('animated fadeInRight delayp4');}
         });
     
         /* Animate elements in #Features */
         $('#features .icon').css('opacity', 0).one('inview', function(event, isInView) {
             if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
-        });
-        
-        /* Animate elements in #How */
-        $('#how .video-wrapper').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInLeft delayp1');}
-        });
-        
-        $('#how .content').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInRight delayp2');}
-        });
-        
-        /* Animate elements in #faq */
-        $('#faq .title').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
-        });
-        $('#faq .question').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInUp delayp2');}
-        });
-        $('#faq .answer').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInUp delayp3');}
-        });
-        $('#faq .btn').css('opacity', 0).one('inview', function(event, isInView) {
-            if (isInView) {$(this).addClass('animated fadeInUp delayp2');}
         });
         
         /* Animate elements in #story */
@@ -80,6 +46,17 @@ jQuery(document).ready(function($) {
         $('#testimonials .press').css('opacity', 0).one('inview', function(event, isInView) {
             if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
         });
+        
+        $('#custom_carousel .content').css('opacity', 0).one('inview', function(event, isInView) {
+            if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
+        });
+        
+        
+        /* Animate elements in #How */
+        $('#tour .container').css('opacity', 0).one('inview', function(event, isInView) {
+            if (isInView) {$(this).addClass('animated fadeInRight delayp2');}
+        });
+        
         
         /* Animate elements in #contact */
         $('#contact .title').css('opacity', 0).one('inview', function(event, isInView) {
