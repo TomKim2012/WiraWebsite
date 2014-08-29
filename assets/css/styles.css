@@ -8,6 +8,7 @@
 body {
 	font-family: 'Lato', arial, sans-serif;
 	color: #444444;
+	overflow-x: hidden;
 }
 
 a {
@@ -150,7 +151,7 @@ blockquote {
 }
 
 .offset-header {
-	padding-top: 90px;
+	padding-top: 82px;
 }
 
 .has-pattern {
@@ -420,7 +421,7 @@ blockquote {
 
 .flexslider .flex-control-nav {
 	bottom: -35px;
-	display: none;
+	/* display: none; */
 }
 
 .flexslider .flex-control-paging li a {
@@ -446,7 +447,7 @@ blockquote {
 .splash {
 width: 100%;
 background:url("../images/Sliders/face.png") no-repeat center;
-height: 481px;
+/* max-height: 481px; */
 text-align:right;
 }
 
@@ -454,29 +455,25 @@ text-align:right;
 	color: #fff;
 }
 
-.promo .container {
-	padding-bottom: 15px;
-	padding-top:45px;
-}
-
 .promo .overview {
-	margin-top: 15px;
-	padding-left: 12px;
-	padding-right: 30px;
+	/* margin-top: 15px; */
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
 }
 
 .promo .overview .flexslider{
-	background:transparent;
-}
-.promo .overview .flexslider .slides span{
-	font-size: 131px;
-	float: left;
-	padding-top: 10px;
+	/* background:transparent; */
 }
 .promo .overview .flexslider .slides img{
-	width: 300px;
-	height:200px;
+	width: 100%;
 }
+
+.promo .overview .flexslider .flex-direction-nav a{
+	height:45px;
+	margin: -30px 25px;
+}
+
 
 
 .promo .overview h2 {
@@ -645,12 +642,12 @@ text-align:right;
 }
 /* ======= Features Section ======= */
 .features {
-	padding: 50px 0;
-	height: 470px;
+	padding: 15px 0;
+	/* height: 425px; */
 }
 
 .features .title{
-	margin-bottom: 75px;
+	margin-bottom: 40px;
 	margin-top:0px;
 }
 
@@ -712,7 +709,7 @@ text-align:right;
 .tour {
 	background-color: #1BCFC9;
 	transition: background .25s;
-	height: 250px;
+	/* height: 250px; */
 	margin-bottom: 45px;
 	color: white;
 	padding-top:10px;
@@ -720,8 +717,8 @@ text-align:right;
 .tour .title{
 }
 .tour .content {
-	padding: 0rem 0;
 	text-align: center;
+	padding: 21px 0px;
 }
 .tour .content .illustration{
     width: 49%;
@@ -839,12 +836,13 @@ text-align:right;
 
 /**/
 .carousel {
-    width: 85%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Indicators images style */
 .article-slide .carousel-inner img {
-   height: 420px;
+   height: 425px;
    width: 100%;
 }
 /* Indicators active image style */
@@ -914,7 +912,8 @@ text-align:right;
 }
 /* ======= Testimonials Section ======= */
 .testimonials {
-    height: 564px;
+    /* height: 564px; */;
+    padding-bottom: 30px;
 }
 
 .testimonials .title {
@@ -1095,6 +1094,11 @@ text-align:right;
 #product_tour{
 	min-height: 776px;
 	padding-bottom: 20px;
+	font-size: 18px;
+}
+
+#product_tour h3{
+	font-weight:700;
 }
 
 

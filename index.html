@@ -103,60 +103,19 @@
 
 	<!-- ******PROMO****** -->
 	<section id="promo" class="promo splash section offset-header">
-		<div class="container">
-			<div class="row">
-				<div class="overview col-md-12 col-sm-12 col-xs-12">
-					<div class="slider flexslider">
-						<ul class="slides">
-							<li>
-								<div class="row">
-									<div class="col-md-8 col-md-offset-4">
-										<h2 class="title">
-											Your Business
-											<p>is about</p>
-											<strong>Processes</strong> and <strong>People</strong>
-										</h2>
-									</div>
-
-									<!-- <div class="col-md-4 icon">
-										<img
-											src="assets/images/screenshots/without_wira_illustration.png"
-											width="300px" height="200px" />
-									</div> -->
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-md-8 col-md-offset-4">
-										<h2 class="title">
-											Efficiency and Agility
-											<p>are</p>
-											core to your business sucesss
-										</h2>
-									</div>
-									<!-- <div class="col-md-4">
-										<span class="fa fa-signal"></span>
-									</div> -->
-								</div>
-
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-md-8 col-md-offset-4">
-										<h2 class="title">
-											Wira takes care your business processes <br>
-											<p>...while you can take care of your business</p>
-										</h2>
-									</div>
-									<!-- <div class="col-md-4">
-										<img
-											src="assets/images/screenshots/with_wira_illustration.png"
-											width="300px" height="200px" />
-									</div> -->
-								</div>
-							</li>
-						</ul>
-					</div>
+		<div class="row">
+			<div class="overview col-md-12 col-sm-12 col-xs-12">
+				<div class="slider flexslider">
+					<ul class="slides">
+						<li><img alt=""
+							src="assets/images/Sliders/wira_slides-01.jpg"></li>
+						<li><img alt=""
+							src="assets/images/Sliders/wira_slides-02.jpg"></li>
+						<li><img alt=""
+							src="assets/images/Sliders/wira_slides-03.jpg"></li>
+						<li><img alt=""
+							src="assets/images/Sliders/wira_slides-04.jpg"></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -211,7 +170,7 @@
 				<!--//item-->
 
 				<!--//item-->
-				<div class="item col-md-3 col-sm-12 col-xs-12 text-center">
+				<div class="item col-md-3 col-sm-6 col-xs-12 text-center">
 					<div class="icon">
 						<i class="fa fa-money"></i>
 					</div>
@@ -614,33 +573,32 @@
 			</div>
 			<!--//row-->
 			<div class="row text-center">
-				<div
-					class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+				<!-- <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 					<form class="form">
 						<div class="form-group name">
 							<label class="sr-only" for="name">Name</label> <input id="name"
 								type="text" class="form-control" placeholder="Name:">
 						</div>
-						<!--//form-group-->
+						//form-group
 						<div class="form-group email">
 							<label class="sr-only" for="email">Email</label> <input
 								id="email" type="email" class="form-control"
 								placeholder="Email:">
 						</div>
-						<!--//form-group-->
+						//form-group
 						<div class="form-group message">
 							<label class="sr-only" for="message">Message</label>
 							<textarea id="message" class="form-control" rows="6"
 								placeholder="Message:"></textarea>
 						</div>
-						<!--//form-group-->
+						//form-group
 						<button type="submit" class="btn btn-lg btn-theme">Send
 							Message</button>
 					</form>
 
 					<a href="http://www.a1.io/a1io_blog/wira-for-jbpm/" target="_blank">Blog</a>
-					<!--//form-->
-				</div>
+					//form
+				</div> -->
 				<!--//contact-form-->
 			</div>
 			<!--//row-->
@@ -702,23 +660,26 @@
 	<!--<![endif]-->
 	<script type="text/javascript" src="assets/js/carousel.js"></script>
 
-	<!-- ClickDesk -->
-	<!-- ClickDesk Live Chat Service for websites -->
-	<script type='text/javascript'>
-		var _glc = _glc || [];
-		_glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGKuoteIEDA');
-		var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/'
-				: 'http://my.clickdesk.com/clickdesk-ui/browser/');
-		var glcp = (('https:' == document.location.protocol) ? 'https://'
-				: 'http://');
-		var glcspt = document.createElement('script');
-		glcspt.type = 'text/javascript';
-		glcspt.async = true;
-		glcspt.src = glcpath + 'livechat-new.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(glcspt, s);
+	<!--Start of Zopim Live Chat Script-->
+	<script type="text/javascript">
+		window.$zopim || (function(d, s) {
+			var z = $zopim = function(c) {
+				z._.push(c)
+			}, $ = z.s = d.createElement(s), e = d.getElementsByTagName(s)[0];
+			z.set = function(o) {
+				z.set._.push(o)
+			};
+			z._ = [];
+			z.set._ = [];
+			$.async = !0;
+			$.setAttribute('charset', 'utf-8');
+			$.src = '//cdn.zopim.com/?4GsMfj4klUHoe5lkkIK4hKvMABZikSOV';
+			z.t = +new Date;
+			$.type = 'text/javascript';
+			e.parentNode.insertBefore($, e)
+		})(document, 'script');
 	</script>
-	<!-- End of ClickDesk -->
+	<!--End of Zopim Live Chat Script-->
 
 </body>
 

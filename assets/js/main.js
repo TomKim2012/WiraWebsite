@@ -22,9 +22,15 @@ jQuery(document).ready(function($) {
 	
     /* ======= Flexslider ======= */
     $('.flexslider').flexslider({
-        animation: "fade",
+        animation: "slide",
         touch: true,
-        directionNav: false
+        directionNav: true,
+        pauseOnAction:true,
+        slideshow:true,
+        startAt:1,
+        slideshowSpeed: 7000,
+        animationSpeed: 600,
+        initDelay: 0   
     });
 
     /* ======= jQuery Placeholder ======= */
